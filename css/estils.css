@@ -1,0 +1,89 @@
+/* ANIMACIÓ 1 */
+@keyframes escalat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animacio1 {
+    animation: escalat 2s infinite ease-in-out;
+    display: block;
+    width: 10%;
+}
+
+
+/* ANIMACIÓ 2 */
+@keyframes opacitat-i-rotacio {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(180deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.animacio2 {
+    animation: opacitat-i-rotacio 3s infinite ease-in-out;
+    display: block;
+    width: 15%;
+}
+
+/* ANIMACIÓ 3 */
+@keyframes desplacament {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(20px);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    75% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animacio3 {
+    animation: desplacament 1.5s infinite ease-in-out;
+    display: block;
+    width: 12%;
+}
+
+
+/* ANIMACIÓ 4 */
+@keyframes rotacio-i-desplaçament {
+    0% {
+        transform: rotate(10deg);
+        left: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        left: 100vw;
+    }
+}
+
+.animacio4 {
+    animation: rotacio-i-desplaçament 5s infinite linear;
+    display: block;
+    width: 10%;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    transform-origin: center;
+}
